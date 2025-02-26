@@ -16,7 +16,7 @@ function Portfolio() {
 
       {/* Centered Text Section */}
       <div className="one">
-        <h3 className="animate-text">Hey I'm</h3>
+        <h3 className="animate-text">Hey </h3>
         <h1 className="animate-text">SHUBHAHARINI</h1>
       </div>
     </div>
