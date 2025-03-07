@@ -8,31 +8,39 @@ function Portfolio() {
         <div className="navbar-left">
           <a href="#home" className="logo">Shubhaharini</a>
         </div>
+
         <ul className="navbar-right">
           <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li> {/* Scrolls to Education */}
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      {/* Centered Text Section */}
-      <section className="center-section">
-        <h1>Hey, Shubhaharini</h1>
-      </section>
-
-      {/* Other sections */}
+      {/* Home Section */}
       <section id="home" className="section">
         <h1>Welcome to My Portfolio</h1>
         <p>This is a brief introduction about myself.</p>
       </section>
 
-      <section id="about" className="section">
-        <h2>About Me</h2>
-        <p>Information about my background and experience.</p>
+      {/* Education Section */}
+      <section id="education" className="section">
+        <h2>Education</h2>
+        <p><strong>Bachelor's Degree in Computer Science</strong></p>
+        <p>XYZ University | 2019 - 2023</p>
+        <p>Relevant Courses: Data Structures, Web Development, AI & ML</p>
       </section>
 
+      {/* About Section */}
+      <section id="about" className="section">
+        <h2>About Me</h2>
+        <p>A short description about my skills, experience, and goals.</p>
+      </section>
+
+      {/* Contact Section */}
       <section id="contact" className="section">
         <h2>Contact</h2>
-        <p>Get in touch with me.</p>
+        <p>Get in touch with me at: jeevikaravi03@gmail.com</p>
       </section>
     </div>
   );

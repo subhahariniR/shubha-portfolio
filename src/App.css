@@ -174,12 +174,40 @@ body {
     transform: translateY(0);
   }
 }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Styling */
+.section {
+  padding: 50px;
+  margin: 50px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Education Card Styling */
+.education-card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+
 
 /* Section Styling */
 .section {
   padding: 80px 20px;
   text-align: center;
   min-height: 100vh;
+
+
 }
 
 #home {
