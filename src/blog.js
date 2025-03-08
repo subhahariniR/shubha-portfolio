@@ -26,7 +26,7 @@ function Portfolio() {
           <li><a href="#home">Home</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="About.js">About me</a></li>
-          <li><a href="#case-study">photos</a></li>
+          <li><a href="#case-study">Projects</a></li>
         </ul>
       </nav>
       {/* Centered Text Section */}
@@ -36,7 +36,7 @@ function Portfolio() {
       </div>
     </div>
     
-    <section id="education" className="section">
+    {/* <section id="education" className="section">
       <h2>Education</h2>
 
       <div className="education-card">
@@ -52,7 +52,7 @@ function Portfolio() {
         <p>2020 - 2022</p>
         <p>Subjects: Mathematics, Physics, Chemistry, Computer Science</p>
       </div>
-    </section>
+    </section> */}
     </>
   );
 }
