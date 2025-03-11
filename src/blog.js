@@ -1,4 +1,6 @@
 import './App.css';
+import { FaEnvelope, FaInstagram, FaGithub, FaHome } from "react-icons/fa"; // ✅ Added FaHome
+
 
 function Portfolio() {
   return (
@@ -21,13 +23,29 @@ function Portfolio() {
             </a>
           </div>
         </div>
-
-        <ul className="navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="About.js">About me</a></li>
-          <li><a href="#case-study">Projects</a></li>
-        </ul>
+<ul className="navbar-right">
+  <li>
+    <a href="#home">
+      <FaHome size={20} /> Home
+    </a>
+  </li>
+  {/* Social Media Links with Icons */}
+  <li>
+    <a href="mailto:jeevikaravi@gmail.com" target="_blank" rel="noopener noreferrer">
+      <FaEnvelope size={20} /> Email
+    </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/s.u.b.h.a_24?igsh=OWp4ZGd0cnBqcWJz" target="_blank" rel="noopener noreferrer">
+      <FaInstagram size={20} /> Instagram
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/subhahariniR" target="_blank" rel="noopener noreferrer">
+      <FaGithub size={20} /> GitHub
+    </a>
+  </li>
+</ul>
       </nav>
       {/* Centered Text Section */}
       <div className="one">
@@ -35,24 +53,6 @@ function Portfolio() {
         <h1 className="animate-text">Shubhaharini!!</h1>
       </div>
     </div>
-    
-    {/* <section id="education" className="section">
-      <h2>Education</h2>
-
-      <div className="education-card">
-        <h3> Computer Science and engineering</h3>
-        <p><strong>annaUniversity</strong></p>
-        <p>2022 - 2026</p>
-        <p>Key Subjects: Data Structures, Web Development, AI & ML, Databases</p>
-      </div>
-
-      <div className="education-card">
-        <h3>High School</h3>
-        <p><strong>lions metric higher Secondary School</strong></p>
-        <p>2020 - 2022</p>
-        <p>Subjects: Mathematics, Physics, Chemistry, Computer Science</p>
-      </div>
-    </section> */}
     </>
   );
 }

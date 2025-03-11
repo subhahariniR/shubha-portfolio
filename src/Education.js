@@ -1,25 +1,60 @@
-import React from 'react';
-import './App.css'; // Ensure styles are applied
+import React, { useState } from "react";
+import { FaSearchPlus } from "react-icons/fa"; // Importing a zoom icon
+import { FaGraduationCap } from 'react-icons/fa';
+
+
+const educationData = [
+  {
+    title: "Computer Science and Engineering",
+    institution: "Anna University",
+    duration: "2022 - 2026",
+    subjects: "Key Subjects: Data Structures, Web Development, AI & ML, Databases",
+  },
+  {
+    title: "High School",
+    institution: "Lions Matric Higher Secondary School",
+    duration: "2020 - 2022",
+    subjects: "Subjects: Mathematics, Physics, Chemistry, Computer Science",
+  },
+];
 
 function Education() {
+  const [zoomedIndex, setZoomedIndex] = useState(null);
+
+  const toggleZoom = (index) => {
+    setZoomedIndex(zoomedIndex === index ? null : index);
+  };
+
   return (
-    <section id="education" className="section">
-      <h2>Education</h2>
-
-      <div className="education-card">
-        <h3> Computer Science and engineering</h3>
-        <p><strong>annaUniversity</strong></p>
-        <p>2022 - 2026</p>
-        <p>Key Subjects: Data Structures, Web Development, AI & ML, Databases</p>
+    <section id="EDUCATION" className="p-10 bg-gray-900 text-white min-h-screen">
+  <h2 className="text-4xl font-bold text-center mb-8 animate-text">
+   <center>EDUCATION</center>
+  </h2>
+  <div className="flex flex-wrap justify-center gap-6">
+    {educationData.map((edu, index) => (
+      <div
+        key={index}
+        className={`education-card bg-gray-800 p-6 rounded-lg w-80 shadow-md transition duration-300 ease-in-out ${
+          zoomedIndex === index ? "zoomed" : ""
+        }`}
+      >
+        <div className="flex justify-between items-center">
+          <h3 className="text-xl font-semibold text-white mb-2">{edu.title}</h3>
+          <FaSearchPlus
+            className="text-gray-400 cursor-pointer hover:text-white"
+            size={20}
+            onClick={() => toggleZoom(index)}
+          />
+        </div>
+        <p className="text-gray-300"><strong>{edu.institution}</strong></p>
+        <p className="text-gray-400">{edu.duration}</p>
+        <p className="text-gray-400 mt-2">{edu.subjects}</p>
       </div>
+    ))}
+  </div>
+</section>
 
-      <div className="education-card">
-        <h3>High School</h3>
-        <p><strong>lions metric higher Secondary School</strong></p>
-        <p>2020 - 2022</p>
-        <p>Subjects: Mathematics, Physics, Chemistry, Computer Science</p>
-      </div>
-    </section>
+
   );
 }
 
