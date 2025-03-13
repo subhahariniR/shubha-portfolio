@@ -1,0 +1,67 @@
+.skills-section {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 60%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skills-section h2 {
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.666);
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  /* Circle container */
+  .circle-skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .circle-skill {
+    text-align: center;
+    position: relative;
+  }
+  
+  .skill-name {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.741);
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Circular Progress */
+  .progress-circle {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+  }
+  
+  .bg-circle {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+    stroke-width: 8;
+  }
+  
+  .progress {
+    fill: none;
+    stroke: #ff002fbc;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 251;
+    stroke-dashoffset: 251;
+  }
+  
+  /* Centered Percentage */
+  .percentage-text {
+    font-size: 16px;
+    fill: rgba(255, 255, 255, 0.166);
+    font-weight: bold;
+    transform: rotate(90deg);
+  }
+  

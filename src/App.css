@@ -143,13 +143,11 @@ body {
 
 .animate-text:nth-child(3) {
   animation-delay: 3s;
-}  
+}
 
 .animate-text:nth-child(4) {
-  animation-delay: 3s;
-}  
-
-
+  animation-delay: 3.05s; /* Reduced delay to minimize gap */
+}
 
 /* Keyframes for fading in */
 @keyframes fadeIn {
@@ -208,14 +206,6 @@ html {
   padding: 80px 20px;
   text-align: center;
   min-height: 100vh;
-}
-
-#home {
-  background-color: #ffffff;
-}
-
-#contact {
-  background-color: #ffffff;
 }
 
 /* ✅ Fixed: Corrected Media Query */
@@ -310,4 +300,93 @@ body {
 .footer-bottom {
   margin-top: 80px;
   font-size: 0.9rem;
+}
+ /* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #ff6f61, #6a5acd);
+  animation: backgroundAnimation 10s infinite alternate;
+  box-sizing: border-box;
+}
+
+/* Skill Section */
+.skills-section {
+  padding: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 60%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Skill Bars */
+.skill {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.skill-name {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 10px;
+  width: 0;
+  background: #ff6f61;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Skill levels (adjust width based on your skill proficiency) */
+.skill-html .skill-fill { width: 90%; }
+.skill-css .skill-fill { width: 85%; }
+.skill-js .skill-fill { width: 80%; }
+.skill-react .skill-fill { width: 75%; }
+.skill-node .skill-fill { width: 70%; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-section {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+.circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
