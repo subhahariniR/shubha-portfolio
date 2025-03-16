@@ -1,67 +1,149 @@
 .skills-section {
-    text-align: center;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin: 50px auto;
-    width: 60%;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .skills-section h2 {
-    font-size: 30px;
-    color:rgba(0, 0, 0, 0.666);
-    margin-bottom: 25px;
-    font-weight: bold;
-  }
-  
-  /* Circle container */
-  .circle-skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
+  text-align: center;
+  padding: 20px;
+}
+
+.circle-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circle-skill {
+  width: 120px; /* Adjust width for responsiveness */
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  width: 100%;
+  height: auto;
+}
+
+.bg-circle {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 10;
+}
+
+.progress {
+  fill: none;
+  stroke:orangered;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 251;
+}
+
+.percentage-text {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333;
+}
+
+.skill-name {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .circle-skill {
-    text-align: center;
-    position: relative;
+    width: 90px;
+    height: 90px;
   }
-  
-  .skill-name {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.741);
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  /* Circular Progress */
-  .progress-circle {
-    width: 100px;
-    height: 100px;
-    transform: rotate(-90deg);
-  }
-  
-  .bg-circle {
-    fill: none;
-    stroke: rgba(255, 255, 255, 0.2);
-    stroke-width: 8;
-  }
-  
-  .progress {
-    fill: none;
-    stroke: #ff002fbc;
-    stroke-width: 8;
-    stroke-linecap: round;
-    stroke-dasharray: 251;
-    stroke-dashoffset: 251;
-  }
-  
-  /* Centered Percentage */
   .percentage-text {
-    font-size: 16px;
-    fill: rgba(255, 255, 255, 0.166);
-    font-weight: bold;
-    transform: rotate(90deg);
+    font-size: 12px;
   }
-  
+  .skill-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle-skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.skill-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  width: 300px; /* Box Width */
+  max-height: 200px; /* Box Height */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto; /* Enables scroll for longer text */
+  word-wrap: break-word;
+  animation: fadeInUp 0.5s ease-in-out;
+  position: relative;
+}
+
+/* Gradient Border Effect */
+.skill-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b, #1e90ff, #00c9ff);
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+/* Fade-In Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar */
+.skill-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.skill-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.skill-box::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border-radius: 5px;
+}
+
+/* Fixes Footer Overlap */
+.skills-section {
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+/* Hover Effect */
+.skill-box:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+

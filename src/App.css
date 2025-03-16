@@ -176,7 +176,7 @@ html {
 
 /* Education Card Styling */
 .education-card {
-  background: rgba(255, 255, 255, 0.416);
+  background: linear-gradient(45deg, #ff416d7f, #ff4b2b86, #1e90ff, #00c8ff65);
   padding: 20px;
   margin: 20px auto;
   width: 60%;
@@ -273,7 +273,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: auto;
+  margin: 0;
   padding: 0x;
 }
 
@@ -293,12 +293,12 @@ body {
 }
 
 .social-icons a {
-  margin: 0 10px;
+  margin: 0 ;
   font-size: 1.5rem;
 }
 
 .footer-bottom {
-  margin-top: 80px;
+  margin-top: 100px;
   font-size: 0.9rem;
 }
  /* General styling */
@@ -324,7 +324,7 @@ body {
 
 .skills-section h2 {
   font-size: 28px;
-  color: white;
+  color:black;
   margin-bottom: 20px;
 }
 
@@ -336,7 +336,7 @@ body {
 
 .skill-name {
   font-size: 18px;
-  color: white;
+  color: rgba(255, 255, 255, 0.863);
   margin-bottom: 5px;
 }
 
@@ -350,7 +350,7 @@ body {
 .skill-fill {
   height: 10px;
   width: 0;
-  background: #ff6f61;
+  background: #ff6e61c6;
   border-radius: 10px;
   transition: width 1.5s ease-in-out;
 }
@@ -379,14 +379,96 @@ body {
 
 /* Profile Image Styling */
 .profile-image {
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
-  border-radius: 50%; /* Makes it circular */
+  width: 100px;
+  height: 100px;
+  border-radius: 75%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto;
+  transition: transform 0.5s ease-in-out;
 }
 
-.profile-image:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+/* Animation effect */
+.animated-image:hover {
+  transform: scale(1.2) rotate(10deg); /* Enlarges and slightly rotates */
+  animation: bounce 0.6s ease infinite alternate; /* Bouncing effect */
 }
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); } /* Moves up slightly */
+}
+
+
+
+.what-i-do {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.592);
+  max-width: 800px;
+  margin: auto;
+}
+
+.what-i-do h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.what-i-do p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.what-i-do span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .what-i-do {
+    padding: 30px 15px;
+  }
+  .what-i-do h2 {
+    font-size: 1.8rem;
+  }
+  .what-i-do p {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .what-i-do h2 {
+    font-size: 1.6rem;
+  }
+  .what-i-do p {@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .fade-in-image {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+.glowing-image:hover {
+  box-shadow: 0px 8px 20px rgba(119, 0, 255, 0.6); /* Glowing orange shadow */
+  border: 2px solid rgba(102, 0, 255, 0.8); /* Highlight border */
+  transform: scale(1.02); /* Slight pop effect */
+  transition: all 0.3s ease-in-out;
+}
+
+
