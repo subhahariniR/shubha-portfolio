@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shubha-portfolio/static/css/main.2f900d46.css",
-    "main.js": "/shubha-portfolio/static/js/main.fafdbd29.js",
+    "main.css": "/shubha-portfolio/static/css/main.d45ce9d6.css",
+    "main.js": "/shubha-portfolio/static/js/main.d1106658.js",
     "static/js/453.f7a42d0e.chunk.js": "/shubha-portfolio/static/js/453.f7a42d0e.chunk.js",
     "static/media/Profile.png": "/shubha-portfolio/static/media/Profile.10283e803a6e2aa785dc.png",
     "index.html": "/shubha-portfolio/index.html",
-    "main.2f900d46.css.map": "/shubha-portfolio/static/css/main.2f900d46.css.map",
-    "main.fafdbd29.js.map": "/shubha-portfolio/static/js/main.fafdbd29.js.map",
+    "main.d45ce9d6.css.map": "/shubha-portfolio/static/css/main.d45ce9d6.css.map",
+    "main.d1106658.js.map": "/shubha-portfolio/static/js/main.d1106658.js.map",
     "453.f7a42d0e.chunk.js.map": "/shubha-portfolio/static/js/453.f7a42d0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f900d46.css",
-    "static/js/main.fafdbd29.js"
+    "static/css/main.d45ce9d6.css",
+    "static/js/main.d1106658.js"
   ]
 }
