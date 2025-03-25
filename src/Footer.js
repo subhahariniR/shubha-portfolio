@@ -43,7 +43,7 @@ function Footer() {
   
         {/* Copyright Section */}
         <div className="footer-bottom">
-          <p>© 2025 Shubhaharini. All Rights Reserved.</p>
+          <p>"Empowering Digital Dreams!"</p>
         </div>
       </footer>
     );

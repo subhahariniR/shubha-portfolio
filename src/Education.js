@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { FaSearchPlus, FaMapMarkerAlt } from "react-icons/fa"; // Importing icons
+import React from "react";
+import { FaMapMarkerAlt } from "react-icons/fa"; // Only importing the map marker icon
 
 const educationData = [
   {
@@ -19,12 +19,6 @@ const educationData = [
 ];
 
 function Education() {
-  const [zoomedIndex, setZoomedIndex] = useState(null);
-
-  const toggleZoom = (index) => {
-    setZoomedIndex(zoomedIndex === index ? null : index);
-  };
-
   return (
     <section id="EDUCATION" className="p-10 bg-gray-900 text-white min-h-screen">
       <h2 className="text-4xl font-bold text-center mb-8 animate-text">
@@ -34,17 +28,10 @@ function Education() {
         {educationData.map((edu, index) => (
           <div
             key={index}
-            className={`education-card bg-gray-800 p-6 rounded-lg w-80 shadow-md transition duration-300 ease-in-out ${
-              zoomedIndex === index ? "zoomed" : ""
-            }`}
+            className="education-card bg-gray-800 p-6 rounded-lg w-80 shadow-md transition duration-300 ease-in-out"
           >
             <div className="flex justify-between items-center">
               <h3 className="text-xl font-semibold text-white mb-2">{edu.title}</h3>
-              <FaSearchPlus
-                className="text-gray-400 cursor-pointer hover:text-white"
-                size={20}
-                onClick={() => toggleZoom(index)}
-              />
             </div>
             <p className="text-gray-300"><strong>{edu.institution}</strong></p>
             
@@ -55,8 +42,6 @@ function Education() {
 
             <p className="text-gray-400">{edu.duration}</p>
             <p className="text-gray-400 mt-2">{edu.subjects}</p>
-
-  
           </div>
         ))}
       </div>
