@@ -1,8 +1,11 @@
+/* Skills Section */
 .skills-section {
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+  background-color: #0a192f04; /* Subtle dark background */
 }
 
+/* Skills Grid */
 .circle-skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -10,15 +13,51 @@
   gap: 20px;
 }
 
+/* Individual Skill Container */
 .circle-skill {
-  width: 120px; /* Adjust width for responsiveness */
+  width: 120px;
   height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.322);
+  border: 2px solid transparent;
 }
 
+/* Hover & Ripple Effect */
+.circle-skill:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+  border: 2px solid black;
+  transform: scale(1.08);
+}
+
+.circle-skill::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, black, transparent 50%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.circle-skill:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* Circular Progress Bar */
 .progress-circle {
   width: 100%;
   height: auto;
@@ -32,65 +71,53 @@
 
 .progress {
   fill: none;
-  stroke:orangered;
+  stroke: orangered;
   stroke-width: 10;
   stroke-linecap: round;
   stroke-dasharray: 251;
 }
 
+/* Percentage Text */
 .percentage-text {
   font-size: 14px;
   font-weight: bold;
-  fill: #333;
+  fill: #333333ec;
 }
 
+/* Skill Name */
 .skill-name {
   margin-top: 10px;
   font-size: 14px;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .circle-skill {
-    width: 90px;
-    height: 90px;
-  }
-  .percentage-text {
-    font-size: 12px;
-  }
-  .skill-name {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .circle-skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
+/* Skill Box (Detailed Description) */
 .skill-box {
   margin-top: 15px;
   padding: 15px;
-  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
-  backdrop-filter: blur(12px); /* Frosted glass effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
   border-radius: 10px;
   font-size: 16px;
-  color: #fff;
+  color: black;
   text-align: center;
-  width: 300px; /* Box Width */
-  max-height: 200px; /* Box Height */
+  width: 300px;
+  max-height: 200px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: auto; /* Enables scroll for longer text */
+  overflow-y: auto;
   word-wrap: break-word;
-  animation: fadeInUp 0.5s ease-in-out;
   position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Skill Box */
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4);
 }
 
 /* Gradient Border Effect */
@@ -125,7 +152,7 @@
 }
 
 .skill-box::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.136);
   border-radius: 5px;
 }
 
@@ -134,16 +161,23 @@
   border-radius: 5px;
 }
 
-/* Fixes Footer Overlap */
-.skills-section {
-  padding-bottom: 150px;
-  text-align: center;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .circle-skill {
+    width: 90px;
+    height: 90px;
+  }
+  .percentage-text {
+    font-size: 12px;
+  }
+  .skill-name {
+    font-size: 12px;
+  }
 }
 
-/* Hover Effect */
-.skill-box:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease-in-out;
+@media (max-width: 480px) {
+  .circle-skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-

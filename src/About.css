@@ -1,0 +1,87 @@
+.about-container {
+    background-color: #0d111700; /* Dark background */
+    color: #ffffff; /* White text */
+    min-height: 5vh;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black; /* Bright color for title */
+  }
+  
+  .about-description {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .about-details {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  .about-goal {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-style: italic;
+    color: #ff1e35a2; /* Highlight goal in blue */
+  }
+  
+  .contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4b2b;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.5);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  /* Hover Effect */
+  .contact-button:hover {
+    background: #ff2400;
+    box-shadow: 0px 6px 15px rgba(255, 36, 0, 0.7);
+    transform: scale(1.05);
+  }
+  
+  /* Click Animation */
+  .contact-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Glowing Effect */
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #ff4b2b;
+    }
+    50% {
+      box-shadow: 0 0 20px #ff2400;
+    }
+    100% {
+      box-shadow: 0 0 5px #ff4b2b;
+    }
+  }
+  
+  .contact-button:hover {
+    animation: glowing 1.5s infinite;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  

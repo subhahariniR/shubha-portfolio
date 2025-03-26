@@ -28,17 +28,10 @@ function Portfolio() {
             onMouseEnter={(e) => e.target.style.transform = "scale(1.02)"} 
             onMouseLeave={(e) => e.target.style.transform = "scale(1)"} />
         </div>
+    <a href="#hire-me" class="hire-me-btn">Hire Me</a>
+      
         <h4 className="animate-text">🚀 Front-End Developer | React Enthusiast | Tech Explorer</h4>
         <h4 className="animate-text"> 🚀CodingJourney | ContinuousLearning</h4>
-      </div>
-      
-      <div className="text-center p-6">
-        <h2 className="text-3xl font-bold mb-4"><center>💡 What I Do</center></h2>
-        <div className="space-y-2">
-          <p className="text-lg"><center>✨ <strong>Front-End Magic</strong> – Crafting interactive & dynamic web experiences with <span className="text-blue-400">React.js, JavaScript, HTML, and CSS</span>.</center></p>
-          <p className="text-lg"><center>🎨 <strong>Sleek UI/UX</strong> – Designing clean, intuitive, and engaging interfaces.c</center></p>
-          <p className="text-lg"><center>📱 <strong>Responsive & Fast</strong> – Ensuring smooth performance across all devices.</center></p>
-        </div>
       </div>
     </div>
   );
