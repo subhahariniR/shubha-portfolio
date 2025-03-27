@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/shubha-portfolio/static/css/main.62adc63f.css",
-    "main.js": "/shubha-portfolio/static/js/main.d414739d.js",
+    "main.css": "/shubha-portfolio/static/css/main.80700df5.css",
+    "main.js": "/shubha-portfolio/static/js/main.95d67df1.js",
     "static/js/453.f7a42d0e.chunk.js": "/shubha-portfolio/static/js/453.f7a42d0e.chunk.js",
+    "static/media/co.jpg": "/shubha-portfolio/static/media/co.6d06f44066577d23861f.jpg",
     "static/media/Profile.png": "/shubha-portfolio/static/media/Profile.10283e803a6e2aa785dc.png",
-    "static/media/pngtree.jpg": "/shubha-portfolio/static/media/pngtree.f163292656d677ed179b.jpg",
     "index.html": "/shubha-portfolio/index.html",
-    "main.62adc63f.css.map": "/shubha-portfolio/static/css/main.62adc63f.css.map",
-    "main.d414739d.js.map": "/shubha-portfolio/static/js/main.d414739d.js.map",
+    "main.80700df5.css.map": "/shubha-portfolio/static/css/main.80700df5.css.map",
+    "main.95d67df1.js.map": "/shubha-portfolio/static/js/main.95d67df1.js.map",
     "453.f7a42d0e.chunk.js.map": "/shubha-portfolio/static/js/453.f7a42d0e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62adc63f.css",
-    "static/js/main.d414739d.js"
+    "static/css/main.80700df5.css",
+    "static/js/main.95d67df1.js"
   ]
 }
