@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Blog from "./blog.js";
 import WhatIDo from "./WhatIDo.js";
@@ -9,15 +9,37 @@ import Project from "./Projects.js";
 import AboutMe from "./About.js"; 
 
 function App() {
+  // State to manage loading
+  const [loading, setLoading] = useState(true);
+
+  // Show loading for 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer); // Cleanup timer
+  }, []);
+
   return (
     <div className="App">
-      <Blog />
-      <WhatIDo/>
-      <Education />
-      <Project/>
-      <AboutMe/>
-      <Bar />       
-      <Footer />
+      {loading ? (
+        // Loading screen
+        <div className="loading-screen">
+          <h1> Explore My Portfolio.. </h1>
+        </div>
+      ) : (
+        // Main portfolio content
+        <>
+          <Blog />
+          <WhatIDo/>
+          <Project/>
+          <AboutMe/>
+          <Education />
+          <Bar />       
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

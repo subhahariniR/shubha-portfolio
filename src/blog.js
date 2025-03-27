@@ -21,9 +21,9 @@ function Portfolio() {
       </nav>
       
       <div className="one">
-        <h2 className="animate-text">Hey there, I'm</h2>
+      <h1 className="animate" style={{ color: "smokewhite" }}>Hey there..</h1>
         <div className="name-container" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "15px", flexDirection: "row" }}>
-          <h1 className="animate-text">Shubhaharini!!</h1>
+        <h1 className="animate-text">I'm Subha!!</h1>
           <img src={profileImage} alt="Shubhaharini" className="profile-image glowing-image" style={{ marginLeft: "auto", transition: "transform 0.3s ease-in-out", border: "2px solid rgba(255, 165, 0, 0.8)", boxShadow: "0px 8px 20px rgba(255, 165, 0, 0.6)" }}
             onMouseEnter={(e) => e.target.style.transform = "scale(1.02)"} 
             onMouseLeave={(e) => e.target.style.transform = "scale(1)"} />

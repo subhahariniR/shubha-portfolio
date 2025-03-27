@@ -60,7 +60,7 @@
 
 /* Content */
 .what-i-do-content p {
-  color:rgba(245, 245, 245, 0.775);
+  color:white;
   font-size: 1rem;
   margin-bottom: 10px;
 }
@@ -68,7 +68,7 @@
 /* Highlighted Text */
 .what-i-do-content span {
   font-weight: bold;
-  color: #8a5cf69e; /* Purple Accent */
+  color: #8a5cf6df; /* Purple Accent */
 }
 
 /* Mobile Responsive */

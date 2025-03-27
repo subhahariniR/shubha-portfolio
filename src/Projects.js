@@ -29,7 +29,10 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="projects-card">
-            <h3 className="projects-card-title">{project.title}</h3>
+            {/* Underline effect added */}
+            <h3 className="projects-card-title">
+              <u>{project.title}</u>
+            </h3>
             <p className="projects-card-desc">{project.description}</p>
             <a
               href={project.link}

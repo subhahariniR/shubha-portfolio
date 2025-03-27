@@ -28,14 +28,14 @@
   border-radius: 50%;
   padding: 10px;
   transition: all 0.4s ease-in-out;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.322);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.132);
   border: 2px solid transparent;
 }
 
 /* Hover & Ripple Effect */
 .circle-skill:hover {
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
-  border: 2px solid black;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.095);
+  border: 2px solid rgba(0, 0, 0, 0.334);
   transform: scale(1.08);
 }
 
@@ -46,7 +46,7 @@
   left: 50%;
   width: 300%;
   height: 300%;
-  background: radial-gradient(circle, black, transparent 50%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.537), transparent 50%);
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -98,7 +98,7 @@
   backdrop-filter: blur(12px);
   border-radius: 10px;
   font-size: 16px;
-  color: black;
+  color: rgba(0, 0, 0, 0.363);
   text-align: center;
   width: 300px;
   max-height: 200px;
@@ -117,7 +117,7 @@
 /* Hover Effect for Skill Box */
 .skill-box:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.205);
 }
 
 /* Gradient Border Effect */

@@ -41,7 +41,7 @@ function Education() {
           <FaMapMarkerAlt className="text-red-400" /> {edu.location}
         </p>
 
-        <p className="text-gray-400">{edu.duration}</p>
+        <p className="black">{edu.duration}</p>
         <p className="text-gray-400 mt-2">{edu.subjects}</p>
       </div>
     ))}

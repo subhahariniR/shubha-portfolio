@@ -1,87 +1,211 @@
+/* Ensure the Navbar is Fixed */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97.5%;
+  height: 90px; /* Adjust if your navbar has a different height */
+  background:rgba(0, 0, 0, 0.897); /* Slightly transparent for effect */
+  z-index: 1000; /* Ensures it's always above other content */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Section Styling */
 .about-container {
-    background-color: #0d111700; /* Dark background */
-    color: #ffffff; /* White text */
-    min-height: 5vh;
-    padding: 50px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(10vh - 40px); /* Adjusted to prevent navbar overlap */
+  background-color: rgba(10, 17, 23, 0.05); /* Subtle dark background */
+  padding: 30px 20px;
+  margin-top: 70px; /* Ensures content starts after navbar */
+}
+
+/* About Card */
+.about-card {
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent card */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  color: black;
+  padding: 40px;
+  max-width: 500px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.3);
+  border: 2px solid rgba(255, 75, 43, 0.285);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Equal spacing */
+  z-index: 10; /* Ensures it's above background but below navbar */
+}
+
+/* Glowing Animation Effect */
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #ff4b2b3f, #ff220042, #ff4b2b8a, #ff220065);
+  background-size: 400% 400%;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hover Effect */
+.about-card:hover {
+  transform: scale(1.05);
+}
+
+.about-card:hover::before {
+  opacity: 1;
+  animation: glowing-border 1.5s infinite linear;
+}
+
+/* Keyframes for Glowing Border */
+@keyframes glowing-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Title Styling */
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Description Text */
+.about-description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Details Text */
+.about-details {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Highlighted Goal */
+.about-goal {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: black;
+}
+
+/* Contact Button */
+.contact-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff4b2b;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.5);
+  cursor: pointer;
+}
+
+/* Hover Effect for Button */
+.contact-button:hover {
+  background: #ff2400;
+  box-shadow: 0px 6px 15px rgba(255, 36, 0, 0.7);
+  transform: scale(1.05);
+  animation: glowing 1.5s infinite;
+}
+
+/* Click Animation for Button */
+.contact-button:active {
+  transform: scale(0.95);
+}
+
+/* Glowing Effect for Button */
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px #ff4b2b; }
+  50% { box-shadow: 0 0 20px #ff2400; }
+  100% { box-shadow: 0 0 5px #ff4b2b; }
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .about-card {
+    padding: 35px;
+    max-width: 450px;
   }
-  
+
   .about-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: black; /* Bright color for title */
+    font-size: 2.5rem;
   }
-  
+
   .about-description {
-    font-size: 1.5rem;
-    margin-top: 20px;
+    font-size: 1.3rem;
   }
-  
-  .about-details {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    line-height: 1.6;
-  }
-  
-  .about-goal {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    font-style: italic;
-    color: #ff1e35a2; /* Highlight goal in blue */
-  }
-  
+
   .contact-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #ff4b2b;
-    color: white;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px;
+    margin-top: 70px; /* Adjust for smaller screens */
+  }
+
+  .about-card {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description,
+  .about-details,
+  .about-goal {
     font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.5);
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
   }
-  
-  /* Hover Effect */
-  .contact-button:hover {
-    background: #ff2400;
-    box-shadow: 0px 6px 15px rgba(255, 36, 0, 0.7);
-    transform: scale(1.05);
+
+  .contact-button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
   }
-  
-  /* Click Animation */
-  .contact-button:active {
-    transform: scale(0.95);
+}
+
+/* Small Screens (below 480px) */
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.8rem;
   }
-  
-  /* Glowing Effect */
-  @keyframes glowing {
-    0% {
-      box-shadow: 0 0 5px #ff4b2b;
-    }
-    50% {
-      box-shadow: 0 0 20px #ff2400;
-    }
-    100% {
-      box-shadow: 0 0 5px #ff4b2b;
-    }
+
+  .about-description,
+  .about-details,
+  .about-goal {
+    font-size: 0.9rem;
   }
-  
-  .contact-button:hover {
-    animation: glowing 1.5s infinite;
+
+  .contact-button {
+    padding: 8px 15px;
+    font-size: 0.85rem;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .contact-button {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
-  }
-  
+}
