@@ -2,7 +2,7 @@
 .skills-section {
   text-align: center;
   padding: 50px;
-  background-color: #0a192f04; /* Subtle dark background */
+  background-color:rgba(0, 0, 0, 0.83); /* Subtle dark background */
 }
 
 /* Skills Grid */
@@ -23,7 +23,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.521);
   backdrop-filter: blur(10px); /* Frosted glass effect */
   border-radius: 50%;
   padding: 10px;

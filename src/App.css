@@ -12,7 +12,7 @@ body {
 }
 
 .animate {
-  color: rgba(0, 0, 0, 0.663);
+  color: rgba(0, 0, 0, 0.79);
 }
 
 
@@ -472,7 +472,7 @@ body {
 
 /* Advanced Footer Styling */
 .footer {
-  background-color: #00000098;
+  background-color: #000000;
   color: #fff;
   padding: 40px 0;
   text-align: center;
@@ -682,10 +682,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url("pngtree.jpg") no-repeat center center;
+  background: url("co.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.732);
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -700,7 +700,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
+  background:rgba(255, 255, 255, 0.884); /* Adjust the opacity */
   z-index: -1;
 }
 
@@ -732,8 +732,8 @@ body::before {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-color: black; /* Full screen background */
-  color: rgba(255, 255, 255, 0.63);
+  background-color:black ; /* Full screblacken background */
+  color: rgba(255, 255, 255, 0.645);
   font-size: 2rem;
   font-weight: bold;
   animation: fadeOut 2s ease-in-out;
@@ -744,3 +744,4 @@ body::before {
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
+

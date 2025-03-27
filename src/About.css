@@ -5,7 +5,7 @@
   left: 0;
   width: 97.5%;
   height: 90px; /* Adjust if your navbar has a different height */
-  background:rgba(0, 0, 0, 0.897); /* Slightly transparent for effect */
+  background:rgb(0, 0, 0); /* Slightly transparent for effect */
   z-index: 1000; /* Ensures it's always above other content */
   display: flex;
   align-items: center;
@@ -18,22 +18,22 @@
   justify-content: center;
   align-items: center;
   min-height: calc(10vh - 40px); /* Adjusted to prevent navbar overlap */
-  background-color: rgba(10, 17, 23, 0.05); /* Subtle dark background */
+  background-color: ; /* Subtle dark background */
   padding: 30px 20px;
   margin-top: 70px; /* Ensures content starts after navbar */
 }
 
 /* About Card */
 .about-card {
-  background: rgba(255, 255, 255, 0.15); /* Semi-transparent card */
+  background:black; /* Semi-transparent card */
   backdrop-filter: blur(10px); /* Frosted glass effect */
-  color: black;
+  color: whitesmoke;
   padding: 40px;
   max-width: 500px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(255, 75, 43, 0.3);
-  border: 2px solid rgba(255, 75, 43, 0.285);
+  box-shadow: black;
+  border: black;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -82,7 +82,7 @@
 .about-title {
   font-size: 3rem;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 /* Description Text */
@@ -102,7 +102,7 @@
 .about-goal {
   font-size: 1.2rem;
   font-style: italic;
-  color: black;
+  color: whitesmoke;
 }
 
 /* Contact Button */

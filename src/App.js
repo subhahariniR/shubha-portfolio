@@ -7,6 +7,7 @@ import Footer from "./Footer.js";
 import Bar from "./Bar";
 import Project from "./Projects.js"; 
 import AboutMe from "./About.js"; 
+import Testimonial from "./Testimonial.js";
 
 function App() {
   // State to manage loading
@@ -34,6 +35,7 @@ function App() {
           <Blog />
           <WhatIDo/>
           <Project/>
+          <Testimonial/>
           <AboutMe/>
           <Education />
           <Bar />       

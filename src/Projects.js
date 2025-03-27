@@ -8,9 +8,9 @@ const projects = [
     link: "https://subhahariniR.github.io/shubha-portfolio",
   },
   {
-    title: "E-commerce Store",
-    description: "A full-stack MERN e-commerce application with authentication.",
-    link: "https://your-ecommerce-link.com",
+    title: "SnackOrdering-main",
+    description: "A full-stack snackordering application with authentication.",
+    link: "https://github.com/subhahariniR/subhahariniR-subha-a-customizable-snack-ordering-and-delivery-app",
   },
   {
     title: "Weather App",
@@ -29,10 +29,6 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="projects-card">
-            {/* Underline effect added */}
-            <h3 className="projects-card-title">
-              <u>{project.title}</u>
-            </h3>
             <p className="projects-card-desc">{project.description}</p>
             <a
               href={project.link}

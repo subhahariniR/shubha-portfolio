@@ -1,7 +1,7 @@
 /* Section Styling */
 .what-i-do-section {
   padding: 0px;
-  background-color: #0a192f04; /* Subtle dark background */
+  background-color: #0a192f00; /* Subtle dark background */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -11,7 +11,7 @@
 
 /* Card Styling */
 .what-i-do-card {
-  background-color: #0a192f04;
+  background-color:black;
   padding: 20px;
   margin: 20px auto;
   width: 80%;
@@ -39,7 +39,7 @@
   left: 100%;
   width: 300%;
   height: 300%;
-  background: radial-gradient(circle, black, transparent 50%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.393), transparent 50%);
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -54,7 +54,7 @@
 .what-i-do-title {
   font-size: 2rem;
   font-weight: bold;
-  color: black;
+  color: white;
   margin-bottom: 15px;
 }
 
@@ -68,7 +68,7 @@
 /* Highlighted Text */
 .what-i-do-content span {
   font-weight: bold;
-  color: #8a5cf6df; /* Purple Accent */
+  color:rgba(255, 0, 0, 0.589); /* Purple Accent */
 }
 
 /* Mobile Responsive */

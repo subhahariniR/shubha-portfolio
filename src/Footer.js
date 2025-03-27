@@ -36,7 +36,7 @@ function Footer() {
             </a>
           </p>
 
-          <p>Phone: 8072908626</p>
+          <p>Phone:9361878359</p>
         </div>
       </div>
 
